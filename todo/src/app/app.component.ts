@@ -11,5 +11,8 @@ export class AppComponent {
   getName() {
     return this.model.user;
   }
-  title = 'app works!';
+  
+  getToDoItems() {
+    return this.model.items;
+  }
 }
