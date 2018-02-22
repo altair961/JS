@@ -2,7 +2,7 @@ export class Model {
   user;
   items;
   constructor() {
-    this.user = "Adam"
+    this.user = "Adam";
     this.items = [new TodoItem("Buy Flowers", false),
                   new TodoItem("Get Shoes", false),
                   new TodoItem("Collect Tickets", true),
@@ -11,7 +11,7 @@ export class Model {
 }
 
 export class TodoItem {
-  acion;
+  action;
   done;
 
   constructor(action, done){
