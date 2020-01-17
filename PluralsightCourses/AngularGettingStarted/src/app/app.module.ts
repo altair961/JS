@@ -5,7 +5,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { WelcomeComponent } from './home/welcome.component';
 import { ProductModule } from './products/product.module';
 import { AppRoutingModule } from './app-routing.module';
-import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -13,17 +12,11 @@ import { RouterModule } from '@angular/router';
     WelcomeComponent
   ],
   imports: [
-      BrowserModule,
-      HttpClientModule,
-      // RouterModule.forRoot([
-        //   { path: 'welcome', component: WelcomeComponent },
-        //   { path: '', redirectTo: 'welcome', pathMatch: 'full' },
-        //   { path: '**', redirectTo: 'welcome', pathMatch: 'full' }
-        // ]),
-        ProductModule,
-        AppRoutingModule
-//      AppRoutingModule
+    BrowserModule,
+    HttpClientModule,
+    ProductModule,
+    AppRoutingModule
   ],
   bootstrap: [AppComponent]
-})  
+})
 export class AppModule { }
